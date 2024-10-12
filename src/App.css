@@ -1154,6 +1154,42 @@ footer a.link:before{
 }
 
 
-/*******/
+/***  responsive css  ****/
+
+
+@media (max-width: 1300px) {
+  .best-sellers, .Product-discount ,.productsList, .serviceAcc,.blogs ,.foote1{
+    padding: 40px 5%;
+  }
+  .serviceList, .service-detail,.catalog-products,.Related-products,.blog-list,.blogs-detail-page,.page-contact{
+    padding: 60px 5%;
+  }
+  .blogs-detail-page .blog-detail img{
+    height: 300px;
+  }
+  .serviceDetail-info{
+    padding:0 30px 30px;
+  }
+  .product-item img ,.blog-card img{
+    height: 200px;
+  }
+  .product-item h3{
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+  p.discount-price{
+    padding-top: 10px;
+  }
+  .about-acc-boxes .acc-box:first-child{
+    padding: 80px 3%;
+  }
+  .about-acc-boxes .acc-box:nth-child(2) {
+    padding: 80px 5% 60px 30px;
+  }
+  .askHome-infos p{
+    width: 60%;
+  } 
+}
+
 
 

@@ -18,13 +18,19 @@ export default function BestSelleres(){
                     autoplay={{ delay: 5000 }}
                     loop={true}
                     spaceBetween={20}
-                    slidesPerView={5} // Show one slide per view
-                    modules={[Pagination, Navigation, Autoplay , EffectFade]}
+                    slidesPerView={5} 
+                    breakpoints={{
+                        1300: { slidesPerView: 4 }, 
+                        998: { slidesPerView: 4 },  
+                        768: { slidesPerView: 2}, 
+                        450: { slidesPerView: 1}, 
+                    }}
+                    modules={[Autoplay, EffectFade]}
                     className="mySwiper"
-                    >   
+                >
                     {products.filter(prod =>prod.discount)
-                    .map((prod)=>
-                        <SwiperSlide >
+                    .map((prod,key)=>
+                        <SwiperSlide key={key}>
                             <Product prod={prod}></Product>
                         </SwiperSlide>
                     )}

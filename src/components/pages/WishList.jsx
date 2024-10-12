@@ -31,11 +31,7 @@ export default function WishList(){
                             {prod.inStock ? 'In Stock' : 'Out of Stock'}
                         </td>
                         <td>
-                            {prod.inStock ? (
                             <button>Add to Cart</button>
-                            ) : (
-                            <button disabled></button>
-                            )} 
                         </td>
                         </tr>
                     ))}
